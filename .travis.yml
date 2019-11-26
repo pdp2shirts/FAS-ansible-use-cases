@@ -28,6 +28,7 @@ deploy:
   bucket: $AWS_S3_BUCKET
   local_dir: docs/_build/html
   upload_dir: $AWS_DIR
+  skip_cleanup: true
   on:
     branch: master
     repo: f5devcentral/FAS-ansible-use-cases
