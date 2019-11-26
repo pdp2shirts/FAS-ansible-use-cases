@@ -65,7 +65,7 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project.
-project = u'FAS ansible use cases'
+project = u'FAS Ansible Use Cases'
 copyright = u'2019 F5 Networks Inc'
 author = u'F5 Networks'
 
@@ -177,7 +177,7 @@ html_sidebars = {
 # "<project> v<release> documentation" by default.
 #
 #html_title = 'F5 Container Connectors'
-html_title = 'FAS ansible use cases'
+html_title = 'FAS Ansible Use Cases'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
