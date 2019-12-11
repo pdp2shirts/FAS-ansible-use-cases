@@ -49,7 +49,7 @@ Use Case Setup
    
    .. note::
 
-      The IP address shown will differ from your IP address, make sure to use your own inventory file
+      The Public IP address shown will differ from your lab's Public IP address, make sure to use your own inventory file
 
    |
    .. image:: images/UseCase1-960.gif
