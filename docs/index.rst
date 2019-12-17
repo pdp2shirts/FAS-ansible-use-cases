@@ -1,22 +1,10 @@
-F5 AUTOMATION ANSIBLE USE CASES
-===============================
+ANSIBLE AUTOMATION FOR F5: USE CASES
+=====================================
 
 Overview
 --------
 
-The Use Cases for the F5 Automation Provisioner to test common secnarios. 
-This is built by F5 Business Development organization.
-
-New Use Cases will be added periodically to provide additional senarios for BIG-IP Modules.
-
-Workflow
---------
-
-- `Provisioner infrastructure using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/>`_
-- Run use cases using the infrastucture above
-
-Goal
-----
+The use cases templates are built for the F5 Automation Sandbox ennvironment. To run the use-cases, users must use the F5 Ansible provisioner and stand-up the F5 automation sandbox environment. 
 
 With F5 Automation provisioner and these scenario use cases, users can/will be able to
 
@@ -24,11 +12,14 @@ With F5 Automation provisioner and these scenario use cases, users can/will be a
 - Fork instances of code to develop their own plugins and automation playbooks 
 - Provide feedback on existing and new use cases that are relevant to everyday work
 
-How to use
+.. note:: 
+
+   This content is built by F5 Business Development organization. New content will be added periodically to provide additional automation senarios. Please open a github issue for any new feature request**
+
+How to Use
 ----------
 
-Follow `F5 Ansible AWS Provisioner <https://clouddocs.f5.com/training/automation-sandbox/>`_ for
-detailed steps to spin up and tear down the sandbox infrastructure
+- `Provision infrastructure using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_
 
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
 
