@@ -12,7 +12,7 @@ New Use Cases will be added periodically to provide additional senarios for BIG-
 Workflow
 --------
 
-- `Provisioner infrastructure using the F5 provisioner <https://github.com/f5alliances/f5_provisioner>`_
+- `Provisioner infrastructure using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/>`_
 - Run use cases using the infrastucture above
 
 Goal
@@ -27,7 +27,7 @@ With F5 Automation provisioner and these scenario use cases, users can/will be a
 How to use
 ----------
 
-Follow `F5 Ansible AWS Provisioner <https://github.com/f5alliances/f5_provisioner>`_ for
+Follow `F5 Ansible AWS Provisioner <https://clouddocs.f5.com/training/automation-sandbox/>`_ for
 detailed steps to spin up and tear down the sandbox infrastructure
 
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
@@ -59,7 +59,7 @@ detailed steps to spin up and tear down the sandbox infrastructure
 
       ssh studentx@34.219.251.xxx
       cd ~/
-      git clone https://github.com/f5alliances/f5_ansible_use_cases.git
+      git clone https://github.com/f5devcentral/FAS-ansible-use-cases
 
    .. image:: images/Github-960.gif
 
@@ -89,12 +89,12 @@ Support
 -------
 
 This project is a community effort to promote Network and Security automation and is maintained by F5 Business Development (BD). 
-For anyfeature requests or issues, feel free to open an `issue <https://github.com/f5alliances/f5_ansible_use_cases/issues>`_
+For anyfeature requests or issues, feel free to open an `issue <https://github.com/f5devcentral/FAS-ansible-use-cases/issues>`_
 and we will give our best effort to address it.
 
 .. note::
 
-   Need help with automating use cases not present here - `Open a request <https://github.com/f5alliances/f5_ansible_use_cases/issues>`_
+   Need help with automating use cases not present here - `Open a request <https://github.com/f5devcentral/FAS-ansible-use-cases/issues>`_
    
 .. toctree::
    :glob:
