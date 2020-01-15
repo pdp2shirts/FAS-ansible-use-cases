@@ -14,7 +14,7 @@ Users can modify this variable file to create redirect service for any other VIP
 
 .. note::
 
-   This will loop through the entire VIP list so this could take time depending on the number of VIPs within your BIG-IP
+    This will loop through the entire VIP list so this could take time depending on the number of VIPs within your BIG-IP
 
 
 Prerequisites
