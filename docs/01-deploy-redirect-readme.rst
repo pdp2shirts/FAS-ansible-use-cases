@@ -12,9 +12,7 @@ The F5-LTM-HTTP-Redirect.yml playbook will create an SSL (port 443) VIP then cre
 In this example, the playbook looks for F5_VIP_Name: ‘Use-Case-1-VIP’ as specified in the f5_vars.yaml variable file.
 Users can modify this variable file to create redirect service for any other VIP.
 
-.. note::
-
-    This will loop through the entire VIP list so this could take time depending on the number of VIPs within your BIG-IP
+This will loop through the entire VIP list so this could take time depending on the number of VIPs within your BIG-IP
 
 
 Prerequisites
