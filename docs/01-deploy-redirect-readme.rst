@@ -52,15 +52,15 @@ Redirect Verification
 - From a client browser on a device, access the VIP on port 80, you will be redirected to 443 (http://VIP:80)
 - The same webpage will also be accessible via VIP:443 (https://VIP:443)
 
-   .. note::
+.. note::
 
-      The Public IP address shown will differ from your lab's Public IP address, make sure to use the IP address from your own inventory file
+  The Public IP address shown will differ from your lab's Public IP address, make sure to use the IP address from your own inventory file
 
    |
    .. image:: images/UseCase1-960.gif
    |
 
-   .. note::
+.. note::
 
-      While accessing the Virtual IP, your browser is presented with a certificate (clientssl cert) that is built with the BIG-IP.
-      You will see an ‘unsafe’ message from your browser which is expected in this demo. Click proceed to website.
+    While accessing the Virtual IP, your browser is presented with a certificate (clientssl cert) that is built with the BIG-IP.
+    You will see an ‘unsafe’ message from your browser which is expected in this demo. Click proceed to website.
