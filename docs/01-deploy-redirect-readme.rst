@@ -39,16 +39,18 @@ Use Case Setup
 
 This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
 
-  BIG-IP Configuration Verification
-  - Login to the BIG-IP instance
-  - Navigate to Local traffic->Virtual server
-  - Ensure there are 2 VIPs with same IP
-     - One listening on port 443
-     - One listening on port 80
+BIG-IP Configuration Verification
 
-  Redirect Verification
-  - From a client browser on a device, access the VIP on port 80, you will be redirected to 443 (http://VIP:80)
-  - The same webpage will also be accessible via VIP:443 (https://VIP:443)
+- Login to the BIG-IP instance
+- Navigate to Local traffic->Virtual server
+- Ensure there are 2 VIPs with same IP
+  - One listening on port 443
+  - One listening on port 80
+
+Redirect Verification
+
+- From a client browser on a device, access the VIP on port 80, you will be redirected to 443 (http://VIP:80)
+- The same webpage will also be accessible via VIP:443 (https://VIP:443)
 
    .. note::
 
