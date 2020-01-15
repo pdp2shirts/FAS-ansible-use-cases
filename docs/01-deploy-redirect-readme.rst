@@ -55,6 +55,7 @@ Redirect Verification
 .. note::
 
     The Public IP address shown will differ from your lab's Public IP address, make sure to use the IP address from your own inventory file.
+
     While accessing the Virtual IP, your browser is presented with a certificate (clientssl cert) that is built with the BIG-IP.
     You will see an ‘unsafe’ message from your browser which is expected in this demo. Click proceed to website.
 
