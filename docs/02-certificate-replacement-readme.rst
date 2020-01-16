@@ -1,22 +1,22 @@
-Use Case 02: Import/Apply certs and keys
-=========================================
+Use Case 02: Import/Apply Certificates and Keys
+===============================================
 
-Prerequisites
--------------
-
-This usecase assumes that a F5 BIG-IP instance, webservers and Ansible node are deployed. 
-To deploy infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
-
-Overview of Use Case
---------------------
-
-This scenairo will configure the BIG-IP To import certificates(cert/key), create (if doesnt already exist) a Virtual IP (VIP), a Pool
-and ClientSSL Profile and assign it to the created VIP (Use-Case-2).
+Overview
+--------
 
 Being able to create and swap SSL Profiles on a BIG-IP to singular or multiple VIPs is extremly useful, especially in today’s world where SSL
 keys get leaked or hacked or expire. This automated method allows a seamless process to create and change certificates based on need/demand.
 
+This scenario will configure the BIG-IP instance to import certificates and create (if doesnt already exist) a Virtual IP (VIP), a Pool
+and ClientSSL Profile and assign it to the created VIP (Use-Case-2).
+
 This script can be modified to work on other VIPs by editing the F5_VIP_Name section inside of the f5_vars.yaml
+
+Prerequisites
+-------------
+
+This scenario assumes that you have deployed the F5 BIG-IP instance, webservers, and Ansible node via the `F5 Sandbox Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
+
  
 Use Case Setup
 --------------
@@ -32,10 +32,15 @@ Use Case Setup
    
 3. Testing and Validating
 
-   - Login to the BIG-IP
-   - Navigate to Local traffic->Virtual server
-   - View the deployed use case access VIP:port (8081)
-   - Access the VIP on port 8081 to view the new self-signed certificate (https://VIP:8081)
+Certificate Verification
+- From a client browser, access the VIP on port 8081 to view the new self-signed certificate (https://VIP:8081)
+
+BIG-IP Configuration Verification
+
+This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
+- Login to the BIG-IP
+- Navigate to Local traffic->Virtual server
+- View the deployed use case access VIP:port (8081)
 
    |
    .. image:: images/UseCase2-960.gif

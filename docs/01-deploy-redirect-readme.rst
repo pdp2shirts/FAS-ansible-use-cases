@@ -35,16 +35,6 @@ Use Case Setup
 
 3. Testing and Validating
 
-This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
-
-BIG-IP Configuration Verification
-
-- Login to the BIG-IP instance
-- Navigate to Local traffic->Virtual server
-- Ensure there are 2 VIPs with same IP
-  - One listening on port 443
-  - One listening on port 80
-
 Redirect Verification
 
 - From a client browser on a device, access the VIP on port 80, you will be redirected to 443 (http://VIP:80)
@@ -57,6 +47,16 @@ Redirect Verification
     While accessing the Virtual IP, your browser is presented with a certificate (clientssl cert) that is built with the BIG-IP.
     You will see an ‘unsafe’ message from your browser which is expected in this demo. Click proceed to website.
 
+BIG-IP Configuration Verification
+
+This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
+
+- Login to the BIG-IP instance
+- Navigate to Local traffic->Virtual server
+- Ensure there are 2 VIPs with same IP
+  - One listening on port 443
+  - One listening on port 80
+  
    |
    .. image:: images/UseCase1-960.gif
    |
