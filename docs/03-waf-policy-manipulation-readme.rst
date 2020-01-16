@@ -1,31 +1,27 @@
-Use Case 03: WAF policy Manupilation
+Use Case 03: WAF Policy Manipulation
 ====================================
+
+Overview
+--------
+
+Web Application Firewalls work to protect web applications by inspecting incoming traffic, blocking bots, SQL injection, Cross Site Scripting and a host of other attacks. 
+This playbook was designed to demonstrate a basic WAF scenario to block a URL or an IP address or both. It also supports integration with other security vendors or even ticketing based solutions like Service NOW to create a start to finish automated solution based on when attacks can occur.
+
+This use case will configure the BIG-IP to provision the 'BIG-IP WAF <https://www.f5.com/products/security/advanced-waf>', create a Virtual IP (VIP) including a Pool and nodes, a WAF policy for the use
+case, then modify the policy to block IP’s and URL’s.
+
+.. note::
+
+   This Playbook will also detect if Blocked URL or IP already exists and only add what is new.
+
+   This script can be modified to work on other URLs or IP’s by editing the
+   Blocked_URLs and/or Blocked_IPs section inside of the f5_vars.yaml
 
 Prerequisites
 -------------
 
-This usecase assumes that a F5 BIG-IP instance, webservers and Ansible node are deployed. 
-To deploy infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
+This scenario assumes that you have deployed the F5 BIG-IP instance, webservers, and Ansible node via the `F5 Sandbox Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
 
-
-Overview of Use Case
---------------------
-
-This use case will configure the BIG-IP to provision BIG-IP ASM, create a Virtual IP (VIP) including a Pool and nodes, an ASM Policy for the use
-case, then modify the created ASM Policy to Block IP’s and URL’s.
-
-As a security consious vendor F5 wants to ensure that customers can find automated ways to block bad contenders either by IP or by specific URLs
-that are being attacked. This playbook was designed to allow customers to integrate with other security vendors or even ticketing based
-solutions like Service NOW to create a start to finish automated solution based on when attacks can occur.
-
-.. note::
-
-   This Use case can be used in an either/or or combined scenario,
-   meaning you can Block URLs or IPs or Both. This Playbook will also
-   detect if Blocked URL or IP already exists and only add what is new.
-
-   This script can be modified to work on other URLs or IP’s by editing the
-   Blocked_URLs and/or Blocked_IPs section inside of the f5_vars.yaml
 
 Use Case Setup
 --------------
