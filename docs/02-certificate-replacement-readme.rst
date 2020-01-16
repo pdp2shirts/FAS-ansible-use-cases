@@ -4,7 +4,7 @@ Use Case 02: Import/Apply Certificates and Keys
 Overview
 --------
 
-Being able to create and swap SSL Profiles on a BIG-IP to singular or multiple VIPs is extremly useful, especially in today’s world where SSL
+Being able to create and swap SSL Profiles on a BIG-IP to singular or multiple VIPs is extremely useful, especially in today’s world where SSL
 keys get leaked or hacked or expire. This automated method allows a seamless process to create and change certificates based on need/demand.
 
 This scenario will configure the BIG-IP instance to import certificates and create (if doesnt already exist) a Virtual IP (VIP), a Pool
@@ -33,11 +33,13 @@ Use Case Setup
 3. Testing and Validating
 
 Certificate Verification
+
 - From a client browser, access the VIP on port 8081 to view the new self-signed certificate (https://VIP:8081)
 
 BIG-IP Configuration Verification
 
 This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
+
 - Login to the BIG-IP
 - Navigate to Local traffic->Virtual server
 - View the deployed use case access VIP:port (8081)
