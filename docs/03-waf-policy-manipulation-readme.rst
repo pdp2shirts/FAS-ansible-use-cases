@@ -12,7 +12,7 @@ case, then modify the policy to block IP’s and URL’s.
 
 .. note::
 
-   This Playbook will also detect if Blocked URL or IP already exists and only add what is new.
+   This Playbook will also detect if blocked URL or IP already exists and only add what is new.
 
    This script can be modified to work on other URLs or IP’s by editing the
    Blocked_URLs and/or Blocked_IPs section inside of the f5_vars.yaml
@@ -37,16 +37,24 @@ Use Case Setup
 
 3. Testing and Validating
 
-   - Login to the BIG-IP
-   - Navigate to Security->Application security to view the WAF policy deployed
-   - Navigate to Local traffic->Virtual server
-   - View the deployed use case access VIP:port (8082)
-   - Access the VIP on port 8082 (https://VIP:8082)
+WAF Policy Verification
+
+- From a client browser, access the VIP on port 8082 (https://VIP:8082)
    - Access the URL's present in the f5_vars.yml file to see the WAF policy in action
 	 - https://VIP:8082/blocked.html 
 	 - https://VIP:8082/hacked.html
 	 - https://VIP:8082/robot.html 
 
+
+BIG-IP Configuration Verification
+
+This section is optional and for testing and verification purposes only. It assumes knowledge of how to operate BIG-IP commands and networking.
+
+   - Login to the BIG-IP
+   - Navigate to Security->Application security to view the WAF policy deployed
+   - Navigate to Local traffic->Virtual server
+   - View the deployed use case access VIP:port (8082)
+   
    |
    .. image:: images/UseCase3-960.gif
    |
