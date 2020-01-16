@@ -7,7 +7,7 @@ Overview
 Web Application Firewalls work to protect web applications by inspecting incoming traffic, blocking bots, SQL injection, Cross Site Scripting and a host of other attacks. 
 This playbook was designed to demonstrate a basic WAF scenario to block a URL or an IP address or both. It also supports integration with other security vendors or even ticketing based solutions like Service NOW to create a start to finish automated solution based on when attacks can occur.
 
-This use case will configure the BIG-IP to provision the [BIG-IP WAF](https://www.f5.com/products/security/advanced-waf) , create a Virtual IP (VIP) including a Pool and nodes, a WAF policy for the use
+This use case will configure the BIG-IP to provision the `BIG-IP WAF <https://www.f5.com/products/security/advanced-waf>`__, create a Virtual IP (VIP) including a Pool and nodes, a WAF policy for the use
 case, then modify the policy to block IP’s and URL’s.
 
 .. note::
