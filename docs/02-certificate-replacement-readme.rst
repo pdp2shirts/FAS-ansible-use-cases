@@ -44,10 +44,13 @@ This section is optional and for testing and verification purposes only. It assu
 - Navigate to Local traffic->Virtual server
 - View the deployed use case access VIP:port (8081)
 
+.. note::
+
+   The browser certificate used in this scenario is a “Self Signed” UNTRUSTED Certificate.
+   
+
    |
    .. image:: images/UseCase2-960.gif
    |
    
-.. note::
 
-   The browser certificate used in this scenario is a “Self Signed” UNTRUSTED Certificate.
