@@ -26,9 +26,9 @@ This scenario assumes that you have deployed the F5 BIG-IP instance, webservers,
 Use Case Setup
 --------------
 
-1. Login to the Ansible Host 
+1. Login to the Ansible host 
 
-2. Launching the Ansible Playbook:
+2. Launch the Ansible playbook:
 
    .. code::
 
