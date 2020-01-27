@@ -93,7 +93,7 @@ and we will give our best effort to address it.
    :hidden:
 
    Deploy-SSL-enabled-App-service-readme.rst
-   02-certificate-replacement-readme.rst
+   Certificate-replacement-readme.rst
    03-waf-policy-manipulation-readme.rst
    04-enable-disable-pool-members-readme.rst
    05-install-as3-readme.rst
