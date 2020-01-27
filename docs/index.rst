@@ -95,5 +95,5 @@ and we will give our best effort to address it.
    Deploy-SSL-enabled-App-service-readme.rst
    Certificate-replacement-readme.rst
    03-waf-policy-manipulation-readme.rst
-   04-enable-disable-pool-members-readme.rst
+   enable-disable-pool-members-readme.rst
    05-install-as3-readme.rst
