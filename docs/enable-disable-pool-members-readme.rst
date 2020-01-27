@@ -35,7 +35,8 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
    There is an addtional extra_var within the playbook call to trigger the enable or disable. 
    
-3. Testing and Validating
+TESTING AND VALIDATION
+----------------------
 
 This section assumes knowledge of how to operate BIG-IP commands and networking.
 
