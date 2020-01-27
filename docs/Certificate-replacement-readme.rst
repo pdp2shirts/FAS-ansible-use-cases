@@ -31,7 +31,7 @@ As Ansible automation is idempotent, the same use-case template can be used to m
 
 .. note::
 
-This script can be modified to work on other VIPs and with other key/cert pairs by editing the f5_vars.yaml file. 
+   This script can be modified to work on other VIPs and with other key/cert pairs by editing the f5_vars.yaml file. 
 
 TESTING AND VALIDATION
 -----------------------
