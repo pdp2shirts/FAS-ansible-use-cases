@@ -5,7 +5,7 @@ OVERVIEW
 --------
 F5-LTM-HTTP-Redirect.yml is a templated Ansible playbook that demonstrates configuring SSL termination and SSL re-direct for your application on F5 BIG-IP with one Ansible command. 
 
-Using this template, we will create an SSL enabled (on port 8443) application service (Virtual IP or VIP) on F5 BIG-IP and also create the associative Port 80 SSL redirect for that Virtual IP. If there is an already existing application service (VIP) that was previously deployed without SSL (a very common scenario), this template will also enable SSL (open SSL port) on that Virtual IP address.
+Using this template, we will create an SSL enabled (on port 443) application service (Virtual IP or VIP) on F5 BIG-IP and also create the associative Port 80 SSL redirect for that Virtual IP. If there is an already existing application service (VIP) that was previously deployed without SSL (a very common scenario), this template will also enable SSL (open SSL port) on that Virtual IP address.
 
 The certificates used in this template for SSL termination are self-signed certs that are generated on the BIG-IP. Users will be able to swap out the self-signed certs very easily and we will demonstrate how in 'certificate-replacement' template that will follow.
 
@@ -25,7 +25,7 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
       ansible-playbook F5-LTM-HTTP-Redirect.yml -e @f5_vars.yml
 
 
-In this example, the playbook looks for F5_VIP_Name: ‘Use-Case-1-VIP’ as specified in the f5_vars.yaml variable file and creates a app-service named 'Use-Case-1-VIP' with both port '80' and port '8443' enabled.
+In this example, the playbook looks for F5_VIP_Name: ‘Use-Case-1-VIP’ as specified in the f5_vars.yaml variable file and creates a app-service named 'Use-Case-1-VIP' with both port '80' and port '443' enabled.
 
 .. note::
 
@@ -36,7 +36,7 @@ TESTING AND VALIDATION
 **VERIFYING RE-DIRECT SERVICE:**
 
 From a client brower, access the application through the virtual address on the F5 BIG-IP.
-- If you try to access application on Virtual-IP:80 (http://VIP:80), you will be redirected to 8443. 
+- If you try to access application on Virtual-IP:80 (http://VIP:80), you will be redirected to 443. 
 - The same webpage will also be accessible via VIP:443 (https://VIP:443)
 
 .. note::
