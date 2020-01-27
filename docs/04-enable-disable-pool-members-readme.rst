@@ -1,32 +1,28 @@
-Use Case 04: Enable/Disable pool member
-=======================================
+Use Case 04: Enable/Disable pool member for maintenance
+=======================================================
  
+
+Overview
+--------
+
+There are times where web servers are taken offline to provide upgrades,troubleshooting, or even replacement. This script allows the ability to
+enable or disable members within a load balancing pool. This playbook allows the ability to enable/disable all pool members (all) or by host name
+(e.g. host1:80).
+This use case will configure the BIG-IP to enable or disable pool members within the load balancer.
+
+
 Prerequisites
 -------------
 
-This usecase assumes that a F5 BIG-IP instance, webservers and Ansible node are deployed. 
-To deploy infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
+This scenario assumes that you have deployed the F5 BIG-IP instance, webservers, and Ansible node via the `F5 Sandbox Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`__
 
-
-Overview of Use Case
---------------------
-
-This use case will configure the BIG-IP To Enable or Disable LTM PoolMembers.
-
-There are times where servers must be taken offline to provide upgrades,troubleshooting, or even replacement. This script allows the ability to
-enable or disable members within a pool. This playbook allows the ability to enable/disable all pool members (all) or by host name
-(e.g. host1:80)
-
-.. note::
-
-   There is an addtional extra_var within the playbook call to trigger the enable or disable
 
 Use Case Setup
 --------------
 
-1. Login to the Ansible Host
+1. Login to the Ansible host
 
-2. Launching the Ansible Playbook:
+2. Launch the Ansible playbook:
 
    .. code::
 
@@ -37,8 +33,14 @@ Use Case Setup
 
       # To Disable Pool Members
       ansible-playbook F5-LTM-Member-Enable-Disable.yaml -e @f5_vars.yml -e "pool_action=disable"
+
+.. note::
+
+   There is an addtional extra_var within the playbook call to trigger the enable or disable
    
 3. Testing and Validating
+
+This section assumes knowledge of how to operate BIG-IP commands and networking.
 
    - Login to the BIG-IP
    - Navigate to Local traffic->Pools. 

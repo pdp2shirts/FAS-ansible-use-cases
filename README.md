@@ -1,26 +1,37 @@
-F5 AUTOMATION ANSIBLE USE CASES
+F5 SOLUTION SANDBOX SCENARIOS
 ===============================
 
 Overview
 --------
 
-The Use Cases for the F5 Automation Provisioner to test common secnarios. This is built by F5 Business Development organization.
+The F5 Solution Sandbox builds and configures a demo environment to get familiar with the solutions that F5 provides in security, performance, and visibility. Users can use this environment to try automation solutions, build demos and proof of concepts. Using the scenarios provided, users will be able to experience how F5 adds value and integrates into your build environment seamlessly.
 
-New Use Cases will be Added Periodically to Provide Additional Senarios for BIG-IP Modules.
+The F5 Solution Sandbox delivers a few common scenarios to help you learn more:
+
+•	Redirection of HTTP to HTTPS traffic to enforce secured connections
+•	An automated SSL certificate update scenario to manage key updates
+•	Web server pool membership management as a server maintenance scenario
+•	A Web Application Firewall policy management demo which helps you understand how F5 uniquely helps protect you from scenarios such as SQL Injection and blacklisting bad BOTs
+
+Best of all, these scenarios are all powered with simple Ansible scripts that require zero knowledge of F5 configuration.
+
 
 Prerequisites
 -------------
-
-[F5 Ansible Provisioner](https://github.com/f5devcentral/F5-Automation-Sandbox) (Deployed)
+•	An AWS account with the rights to deploy new services
+•	You've used the [F5 Ansible Provisioner](https://github.com/f5devcentral/F5-Automation-Sandbox) to deploy the infrastructure in your AWS account
 
 Goal
 ----
 
-With F5 Automation provisioner and these Scenario Use Cases, users can/will be able to
-- Test Common Deployment Scenarios through Automation with Ansible. 
+With F5 Sandbox Provisioner and these Scenario Use Cases, users will be able to:
 
-- Fork instances of code to develop their own plugins and automation playbooks. 
+•	Learn more about the value of F5 Application Services in the cloud
 
-- Provide feedback on existing and new use cases that are relevant to everyday work (More features will be added soon)
+•	Test common deployment scenarios through Automation with Ansible.
+
+•	Fork instances of code to develop your own plugins and automation playbooks.
+
+•	Provide feedback on existing and new use cases that are relevant to everyday work (More features will be added soon)
 
 **[Click here to get started](https://github.com/f5devcentral/F5-Automation-Sandbox)**
