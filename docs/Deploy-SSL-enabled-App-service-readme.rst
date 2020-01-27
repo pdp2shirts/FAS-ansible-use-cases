@@ -9,8 +9,8 @@ Using this template, we will create an SSL enabled (on port 8443) application se
 
 The certificates used in this template for SSL termination are self-signed certs that are generated on the BIG-IP. Users will be able to swap out the self-signed certs very easily and we will demonstrate how in 'certificate-replacement' template that will follow.
 
-RUN THE USE CASE TEMPLATE
--------------------------
+RUN THE TEMPLATE
+----------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
 To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
 
