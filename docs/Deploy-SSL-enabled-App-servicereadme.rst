@@ -1,4 +1,4 @@
-Use-case Template: Deploy SSL enaled App-service
+Use-case Template: Deploy SSL enabled App-service
 =================================================
 
 OVERVIEW
