@@ -21,6 +21,7 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 3. Run the Ansible Playbook ‘F5-LTM-HTTP-Redirect.yml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
+   
       cd ~/f5_ansible_use_cases/01-deploy-redirect
       ansible-playbook F5-LTM-HTTP-Redirect.yml -e @f5_vars.yml
 
