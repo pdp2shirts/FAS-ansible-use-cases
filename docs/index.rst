@@ -19,6 +19,10 @@ With F5 Automation provisioner and these scenario use cases, users can/will be a
 How to Use
 ----------
 
+.. image:: images/executing-templates.png
+   :width: 800
+
+
 - `Provision infrastructure using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_
 
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
