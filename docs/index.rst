@@ -24,9 +24,10 @@ HOW TO USE
 
 **1. Provision infrastructure**
 
-- `Using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_
+- Use the `FAS Ansible Provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_ to build your environment in AWS. 
 
 **2. Customizing your environment**
+
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
 
    The Workbench information that is stored in a local directory named after the workshop after the provisioner is run
