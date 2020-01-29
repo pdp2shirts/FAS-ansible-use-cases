@@ -1,5 +1,5 @@
-ANSIBLE AUTOMATION FOR F5: USE CASES
-=====================================
+ANSIBLE AUTOMATION FOR F5 SOLUTIONS & USE CASES
+===============================================
 
 OVERVIEW
 --------
@@ -22,11 +22,13 @@ HOW TO USE
 .. image:: images/executing-templates.png
    :width: 800
 
-**1. Provision infrastructure**
+**1. PROVISION INFRASTRUCTURE**
 
 - Use the `FAS Ansible Provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_ to build your environment in AWS. 
 
-**2. Customizing your environment**
+
+
+**2. SETUP ENVIRONMENT & ANSIBLE INVENTORY FILE**
 
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
 
@@ -80,9 +82,10 @@ HOW TO USE
       https://52.39.228.xxx:8443
 
    
-**3. Run use case templates**
+   
+**3. RUN USE CASE TEMPLATES**
 
-Click Next below for use-cases templates
+Click 'Next' below for use-cases templates
 	  
 .. note::
 
