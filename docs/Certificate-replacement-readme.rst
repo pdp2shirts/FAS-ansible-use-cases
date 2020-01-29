@@ -36,7 +36,7 @@ As Ansible automation is idempotent, the same use-case template can be used to m
 TESTING AND VALIDATION
 -----------------------
 **CERTIFICATE VERIFICATION**
-- From a client browser, access the VIP on port 8443 to view the new self-signed certificate (https://VIP:8443)
+- From a client browser, access the VIP on port 8081 to view the new self-signed certificate (https://VIP:8081)
 
 **BIG-IP CONFIGURATION VERIFICATION**
 
@@ -44,7 +44,7 @@ This section is optional and for testing and verification purposes only. It assu
 
 - Login to the BIG-IP
 - Navigate to Local traffic->Virtual server
-- View the deployed use case access VIP:port (8443)
+- View the deployed use case access VIP:port (8081)
    
    |
    .. image:: images/UseCase2-960.gif
