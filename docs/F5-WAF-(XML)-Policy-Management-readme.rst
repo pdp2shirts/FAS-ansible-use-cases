@@ -44,7 +44,7 @@ TESTING AND VALIDATION
 - Access the URL's present in the f5_vars.yml file to see the WAF policy in action
   - https://VIP:8082/blocked.html 
   - https://VIP:8082/hacked.html
-  - https://VIP:8082/robot.html 
+  - https://VIP:8082/robot.txt 
 
 
 **BIG-IP CONFIGURATION VERIFICATION:**
