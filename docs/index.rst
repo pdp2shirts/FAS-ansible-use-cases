@@ -1,7 +1,7 @@
-ANSIBLE AUTOMATION FOR F5: USE CASES
-=====================================
+ANSIBLE AUTOMATION FOR F5 SOLUTIONS & USE CASES
+===============================================
 
-Overview
+OVERVIEW
 --------
 
 The use cases templates are built for the F5 Automation Sandbox ennvironment. To run the use-cases, users must use the F5 Ansible provisioner and stand-up the F5 automation sandbox environment. 
@@ -12,12 +12,23 @@ With F5 Automation provisioner and these scenario use cases, users can/will be a
 - Fork instances of code to develop their own plugins and automation playbooks 
 - Provide feedback on existing and new use cases that are relevant to everyday work
 
-**Please note that This content is built by F5 Business Development organization. New content will be added periodically to provide additional automation senarios. Please open a github issue for any new feature request**
+.. note:: 
 
-How to Use
+   This content is built by F5 Business Development organization. New content will be added periodically to provide additional automation senarios. Please open a github issue for any new feature request**
+
+HOW TO USE
 ----------
 
-- `Provisioner infrastructure using the F5 provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_
+.. image:: images/executing-templates.png
+   :width: 800
+
+**1. PROVISION INFRASTRUCTURE**
+
+- Use the `FAS Ansible Provisioner <https://clouddocs.f5.com/training/automation-sandbox/build_environment.html>`_ to build your environment in AWS. 
+
+
+
+**2. SETUP ENVIRONMENT & ANSIBLE INVENTORY FILE**
 
 1. Login to the Ansible Host (**studentX-ansible**) provided by the F5 Ansible AWS Provisioner
 
@@ -48,7 +59,7 @@ How to Use
 
       ssh studentx@34.219.251.xxx
       cd ~/
-      git clone https://github.com/f5alliances/f5_ansible_use_cases.git
+      git clone https://github.com/f5devcentral/FAS-ansible-use-cases
 
    .. image:: images/Github-960.gif
 
@@ -69,6 +80,12 @@ How to Use
    .. code::
    
       https://52.39.228.xxx:8443
+
+   
+   
+**3. RUN USE CASE TEMPLATES**
+
+Click 'Next' below for use-cases templates
 	  
 .. note::
 
@@ -78,20 +95,20 @@ Support
 -------
 
 This project is a community effort to promote Network and Security automation and is maintained by F5 Business Development (BD). 
-For anyfeature requests or issues, feel free to open an `issue <https://github.com/f5alliances/f5_ansible_use_cases/issues>`_
+For anyfeature requests or issues, feel free to open an `issue <https://github.com/f5devcentral/FAS-ansible-use-cases/issues>`_
 and we will give our best effort to address it.
 
 .. note::
 
-   Need help with automating use cases not present here - `Open a request <https://github.com/f5alliances/f5_ansible_use_cases/issues>`_
+   Need help with automating use cases not present here - `Open a request <https://github.com/f5devcentral/FAS-ansible-use-cases/issues>`_
    
 .. toctree::
    :glob:
    :maxdepth: 2
    :hidden:
 
-   01-deploy-redirect-readme.rst
-   02-certificate-replacement-readme.rst
-   03-waf-policy-manipulation-readme.rst
-   04-enable-disable-pool-members-readme.rst
+   Deploy-SSL-enabled-App-service-readme.rst
+   Certificate-replacement-readme.rst
+   F5-WAF-(XML)-Policy-Management-readme.rst
+   enable-disable-pool-members-readme.rst
    05-install-as3-readme.rst
