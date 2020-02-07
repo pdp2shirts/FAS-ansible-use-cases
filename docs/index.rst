@@ -110,5 +110,5 @@ and we will give our best effort to address it.
    Deploy-SSL-enabled-App-service-readme.rst
    Certificate-replacement-readme.rst
    F5-WAF-(XML)-Policy-Management-readme.rst
-   enable-disable-pool-members-readme.rst
+   ltm-change-pool-member-state.rst
    05-install-as3-readme.rst
