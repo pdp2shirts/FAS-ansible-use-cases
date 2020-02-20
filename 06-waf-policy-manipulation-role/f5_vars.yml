@@ -1,6 +1,6 @@
 ---
 # Modify based on deployment
-F5_VIP_Name: Use-Case-3-VIP
+F5_VIP_Name: Use-Case-6-VIP
 F5_Admin_Port: "8443"
 ASM_Policy_Name: "Use-Case-ASM"
 ASM_Policy_File: "/tmp/XML-Policy.xml"
