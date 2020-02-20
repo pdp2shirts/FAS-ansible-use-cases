@@ -2,8 +2,8 @@
 # Modify based on deployment
 F5_VIP_Name: Use-Case-3-VIP
 F5_Admin_Port: "8443"
-ASM_Policy_Name: "Use-Case-ASM"
-ASM_Policy_File: "/tmp/XML-Policy.xml"
+ASM_Policy_Name: "Use-Case-3-ASM"
+ASM_Policy_File: "/tmp/Use-Case-3-XML-Policy.xml"
 Blocked_URLs:
 - /blocked.html
 - /hacked.html

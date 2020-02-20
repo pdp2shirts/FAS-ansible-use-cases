@@ -4,7 +4,7 @@
   - name: Create an LTM policy
     bigip_policy:
       provider: "{{provider}}"
-      name: asm-policy
+      name: "{{ ASM_Policy_Name }}"
       state: present
     when: Blocked_URLs is defined or Blocked_IPs is defined
 
@@ -19,7 +19,7 @@
   - name: Replace a forward action with an ASM action
     bigip_policy_rule:
       provider: "{{provider}}"
-      policy: asm-policy
+      policy: "{{ ASM_Policy_Name }}"
       name: rule1
       actions:
       - type: enable
@@ -29,7 +29,7 @@
   - name: Deploy Draft ASM policy
     bigip_policy:
       provider: "{{provider}}"
-      name: asm-policy
+      name: "{{ ASM_Policy_Name }}"
       state: present
       rules:
       - rule1
@@ -43,7 +43,7 @@
       description: "HTTPS Virtual Server"
       name: "{{ F5_VIP_Name }}_https_vip"
       destination: "{{ private_ip }}"
-      port: "8082"
+      port: "{{ F5_VIP_Port }}"
       pool: "{{ F5_VIP_Name }}_pool"
       snat: Automap
       profiles:
@@ -53,7 +53,7 @@
          context: client-side
        - websecurity
       policies:
-       - asm-policy
+       - "{{ ASM_Policy_Name }}"
     when: F5_VIP_Name is defined
 
 #Apply Draft ASM policy
