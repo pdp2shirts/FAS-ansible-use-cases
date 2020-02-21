@@ -4,5 +4,7 @@
  - name: Inject Blocked IP Addresses into XML
    include: f5_asm_blocked_ip_injection.yaml
    when: Blocked_IPs is defined
-   tags: policy
+   tags: 
+     - policy
+     - block_ips
 
