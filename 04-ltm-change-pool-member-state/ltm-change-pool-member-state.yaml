@@ -48,6 +48,7 @@
       name: "{{hostvars[item].inventory_hostname}}"
       host: "{{hostvars[item].private_ip}}"
       port: "80"
+      preserve_node: "yes"
     loop: "{{ groups['webservers'] }}"
 
   - name: Query BIG-IP facts

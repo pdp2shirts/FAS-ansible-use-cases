@@ -133,7 +133,7 @@
   - name: Create an LTM policy
     bigip_policy:
       provider: "{{provider}}"
-      name: asm-policy
+      name: "{{ ASM_Policy_Name }}"
       state: present
     when: Blocked_URLs is defined or Blocked_IPs is defined
 
@@ -148,7 +148,7 @@
   - name: Replace a forward action with an ASM action
     bigip_policy_rule:
       provider: "{{provider}}"
-      policy: asm-policy
+      policy: "{{ ASM_Policy_Name }}"
       name: rule1
       actions:
       - type: enable
@@ -158,7 +158,7 @@
   - name: Deploy Draft ASM policy
     bigip_policy:
       provider: "{{provider}}"
-      name: asm-policy
+      name: "{{ ASM_Policy_Name }}"
       state: present
       rules:
       - rule1
@@ -182,7 +182,7 @@
          context: client-side
        - websecurity
       policies:
-       - asm-policy
+       - "{{ ASM_Policy_Name }}"
     when: F5_VIP_Name is defined
 
 #Apply Draft ASM policy
