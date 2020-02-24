@@ -1,6 +1,6 @@
 ---
 - hosts: webservers
-  connection: local
+#  connection: local
   gather_facts: false
   become: yes
   roles:

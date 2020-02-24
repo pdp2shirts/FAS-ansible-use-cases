@@ -42,12 +42,30 @@
     name: containerd.io
     state: present
 
+- name: install python-docker
+  yum:
+    name: python-docker
+    state: present
+
 - name: start docker-ce
   service:
     name: docker
     state: started
 
-- name: pull an image
+
+- name: pull juicebox image
   docker_image:
-    name: bkimminich/juice-shop:latest
+    name:  bkimminich/juice-shop:latest
     source: pull
+
+- name: start juicebox container
+  docker_container:
+    name: juice-shop-app
+    image: bkimminich/juice-shop:latest
+    state: started
+    restart: yes
+    ports:
+    - "3000:3000"
+
+#- name: pull an image via shell
+#  shell: "docker run --rm -p 3000:3000 bkimminich/juice-shop"
