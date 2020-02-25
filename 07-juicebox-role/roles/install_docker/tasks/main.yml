@@ -42,12 +42,12 @@
     name: containerd.io
     state: present
 
+- name: install python-docker
+  yum:
+    name: python-docker
+    state: present
+
 - name: start docker-ce
   service:
     name: docker
     state: started
-
-- name: pull an image
-  docker_image:
-    name: bkimminich/juice-shop:latest
-    source: pull

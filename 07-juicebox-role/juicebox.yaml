@@ -1,7 +1,9 @@
 ---
 - hosts: webservers
-  connection: local
+#  connection: local
   gather_facts: false
   become: yes
   roles:
     - install_docker
+    - install_juice_shop
+    - install_nginx
