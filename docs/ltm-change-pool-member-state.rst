@@ -47,6 +47,3 @@ This section assumes knowledge of how to operate BIG-IP commands and networking.
    - Click on the pool you selected while running the playbook
    - View the members of the pool and verify their state based on action choosen while running the playbook
 
-   |
-   .. image:: images/UseCase4-960.gif
-   |
