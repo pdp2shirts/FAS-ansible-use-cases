@@ -19,13 +19,19 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
 1. Login to the Ansible host and go to the '~/f5_ansible_use_cases/03-waf-policy-manipulation' directory
 
-2. Edit 'f5_vars.yml' file to customize your variables. Here you can add/remove IP addresses and URLs from the 'Blocked_IPs' and 'Blocked_URLs' list
+2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
 
-3. Launch the Ansible playbook 'F5-ASM-URL-IP-Blocking.yaml' with the variable file ‘f5_vars.yml’:
+   .. code::
+   
+      cd ~/FAS-ansible-use-cases/03-waf-policy-manipulation
+
+
+3. (Optional) Edit 'f5_vars.yml' file to customize your variables. Here you can add/remove IP addresses and URLs from the 'Blocked_IPs' and 'Blocked_URLs' list
+
+4. Launch the Ansible playbook 'F5-ASM-URL-IP-Blocking.yaml' with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      cd ~/f5_ansible_use_cases/03-waf-policy-manipulation
       ansible-playbook F5-ASM-URL-IP-Blocking.yaml -e @f5_vars.yml
 
 
