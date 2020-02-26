@@ -15,18 +15,21 @@ RUNNING THE TEMPLATE
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
 To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
 
-1. Login to the Ansible host and go to the '/FAS-ansible-use-cases/04-ltm-change-pool-member-state' directory
+1. Login to the Ansible host
 
-2. Edit 'f5_vars.yml' file to customize your variables for your environment. 
+2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
+
+   .. code::
+   
+      cd ~/FAS-ansible-use-cases/04-ltm-change-pool-member-state
+
+
+3. (Optional) Edit 'f5_vars.yml' file to customize your variables for your environment. 
 
 3. Run the Ansible Playbook ‘ltm-change-pool-member-state.yaml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      change to the directory that you ran git clone to for the FAS-ansible-use-cases then
-      cd FAS-ansible-use-cases/04-ltm-change-pool-member-state/
-
-      # to execute the playbook with the variables file
       ansible-playbook ltm-change-pool-member-state.yaml -e @f5_vars.yml
 
 .. note::
