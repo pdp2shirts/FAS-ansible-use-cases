@@ -2,7 +2,7 @@
 - name: Cert Management on BIG-IP
   hosts: lb
   connection: local
-  gather_facts: fals
+  gather_facts: false
 
 #Environment variables defined
   tasks:
