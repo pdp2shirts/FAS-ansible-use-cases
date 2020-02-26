@@ -16,13 +16,19 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
 1. Login to the Ansible host
    
-2. Edit 'f5_vars.yml' file to customize your variables.
+2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
 
-3. Run the Ansible Playbook ‘F5-LTM-Cert-Management-Replacement.yaml’ with the variable file ‘f5_vars.yml’:
+   .. code::
+   
+      cd ~/FAS-ansible-use-cases/02-certificate-replacement
+
+
+3. (Optional) Edit 'f5_vars.yml' file to customize your variables.
+
+4. Run the Ansible Playbook ‘F5-LTM-Cert-Management-Replacement.yaml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      cd ~/f5_ansible_use_cases/02-certificate-replacement
       ansible-playbook F5-LTM-Cert-Management-Replacement.yaml -e @f5_vars.yml
 
 In this example, the playbook will scenario will configure the BIG-IP instance to import certificates and create (if doesnt already exist) a Virtual IP (VIP), a Pool and ClientSSL Profile and assign it to the created VIP (Use-Case-2).

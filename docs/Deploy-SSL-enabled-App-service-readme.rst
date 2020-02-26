@@ -16,13 +16,19 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
 1. Login to the Ansible Host
 
-2. Edit 'f5_vars.yml' file to customize your variables. For example: F5_VIP_Name: ‘Use-Case-1-VIP', F5_Admin_Port: '8443'
-
-3. Run the Ansible Playbook ‘F5-LTM-HTTP-Redirect.yml’ with the variable file ‘f5_vars.yml’:
+2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
 
    .. code::
    
-      cd ~/f5_ansible_use_cases/01-deploy-redirect
+      cd ~/FAS-ansible-use-cases/01-deploy-redirect
+
+
+3. (Optional) Edit 'f5_vars.yml' file to customize the existing variables. For example: F5_VIP_Name: ‘Use-Case-1-VIP'
+
+4. Run the Ansible Playbook ‘F5-LTM-HTTP-Redirect.yml’ with the variable file ‘f5_vars.yml’:
+
+   .. code::
+   
       ansible-playbook F5-LTM-HTTP-Redirect.yml -e @f5_vars.yml
 
 
