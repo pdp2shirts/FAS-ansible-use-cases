@@ -18,8 +18,8 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
 2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
 
-  .. code::
-  
+   .. code::
+   
       cd ~/FAS-ansible-use-cases/01-deploy-redirect
 
 
