@@ -25,14 +25,20 @@ Use Case Setup
 
 1. Login to the Ansible Host 
 
-2. Launching the Ansible Playbook:
+2. Change Directory in the Ansible Host to the use-cases repo previously downloaded
+
+   .. code::
+   
+      cd ~/FAS-ansible-use-cases/05-install-as3
+
+
+3. Launching the Ansible Playbook:
 
    .. code::
 
-      cd ~/f5_ansible_use_cases/05-install-as3
       ansible-playbook F5-Install-AS3-Package.yaml
 
-3. Testing and Validating
+4. Testing and Validating
 
    - Login to the BIG-IP
    - Navigate to iApps->Packet Management LX 
