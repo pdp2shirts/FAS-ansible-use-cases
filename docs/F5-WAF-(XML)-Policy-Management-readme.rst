@@ -6,10 +6,10 @@ OVERVIEW
 
 F5-ASM-URL-IP-Blocking.yaml is a templated Ansible Playbook to manage blocked IP addresses and URL's on F5 ASM through Ansible automation. 
 
-Web Application Firewalls work to protect web applications by inspecting incoming traffic, blocking bots, SQL injection, Cross Site Scripting and a host of other attacks. 
+Web Application Firewalls work to protect web applications by inspecting incoming traffic, blocking bots, SQL injection, Cross Site Scripting, and a host of other attacks. 
 This playbook is designed to demonstrate a basic WAF scenario to create and modify an F5 WAF (ASM) policy to block URL(s) or IP address(s) or both. 
 
-Using this playbook, other security vendors or even ticketing based solutions like Service NOW, users will be able to create a start to finish automated solution based on when attacks can occur.
+Using this playbook, other security vendors, or even ticketing based solutions like Service NOW, users will be able to create a start to finish automated solution based on when attacks can occur.
 
 
 RUNNING THE TEMPLATE
@@ -39,7 +39,7 @@ This template will configure the F5 BIG-IP to provision the `WAF module <https:/
 
 .. note::
 
-   This Playbook detects if blocked URL or IP already exists and only add what is new (idempotency).
+   This Playbook modifies the provisioning of modules on the BIG-IP and will take some time to complete as the new module comes online. This Playbook detects if blocked URL or IP already exists and only add what is new (idempotency).
 
 
 TESTING AND VALIDATION
